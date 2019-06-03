@@ -28,6 +28,11 @@ public class CategoriaService {
 		obj.setId(null);
 		return repos.save(obj);
 	}
+	
+	public Categoria update(Categoria obj) {
+		buscarPorId(obj.getId());
+		return repos.save(obj);
+	}
 
 	
 }
